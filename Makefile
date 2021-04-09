@@ -1,8 +1,8 @@
-files := $(wildcard sources/*.c)
+files := $(wildcard sources/*.cpp)
  
 all:randomRPG 
 	@echo "Done."
 
 randomRPG: $(files)
-	gcc -Wall -o $@ $(files) -I headers/
+	g++ -Wall -o $@ $(files) -I headers/
 

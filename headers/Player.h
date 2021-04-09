@@ -1,8 +1,21 @@
-typedef struct Players
-{
-    char name[32];
-    int health;
-    int attack;
-} Player;
+#ifndef PLAYER_H
+#define PLAYER_H
 
-void generatePlayerStats(Player*);
+#include <iostream>
+
+using namespace std;
+class Player
+{
+
+private:
+    int attack;
+    int health;
+
+public:
+    Player();
+    int getAttack();
+    int getHealth();
+    void showStats();
+};
+
+#endif // PLAYER_H
