@@ -3,19 +3,14 @@
 
 #include <iostream>
 
+#include "Entity.h"
+
 using namespace std;
-class Player
+
+class Player : public Entity
 {
-
-private:
-    int attack;
-    int health;
-
-public:
-    Player();
-    int getAttack();
-    int getHealth();
-    void showStats();
+    public:
+        Player();
 };
 
 #endif // PLAYER_H
